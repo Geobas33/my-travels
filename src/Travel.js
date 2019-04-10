@@ -1,42 +1,14 @@
 import React from "react";
 
-const Travel = () => (
+const Travel = ({destination, country, distance , image}) => (
 <figure>
-    <img
-      src="https://image.noelshack.com/fichiers/2019/15/2/1554797978-852192.jpg"
-      alt="Japon"
-    />
-    <figcaption>
-        <nav>
-          
-       <li> Destination : Tokyo</li>
-      
-
-      <li>Country : Japan</li>
-
-      
-      <li>Distance : 9 442 km</li>
-       
-      </nav>
-
-
-
-<img
-      src="https://image.noelshack.com/fichiers/2019/15/2/1554797804-bali-temples-jpg.jpg"
-      alt="Bali"
-    />
-    <nav>
-          
-       <li> Destination : Bali</li>
-      
-
-      <li>Country : Indonesia</li>
-
-      
-      <li>Distance : 12 215 km</li>
-       
-      </nav>
-      </figcaption>
-  </figure>
+  <img src={image} alt="test"/>
+  <figcaption>
+    <h2>{destination}</h2>
+    <h3>{country}</h3>
+    <h4>{distance}</h4>
+    
+  </figcaption>
+</figure>
 );
 export default Travel;
